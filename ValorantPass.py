@@ -54,7 +54,11 @@ def how_much_to_finish_pass():
     def total_xp_from_weekly_rewards():
         total = 0
         for week in range(int(current_week.days // 7), weeks_remaining + 1):
-            total += (5400 + (week * 900)) * 3
+            if current_week <= 2:
+                increment = 900  # Week 1 to week 2 the increment was 900
+            else:
+                increment = 1500  # Week 2 to week 3 the increment was 1500
+            total += (5400 + (week * increment)) * 3
         return total
 
     # Output XP left from rewards.
