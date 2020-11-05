@@ -56,8 +56,10 @@ def how_much_to_finish_pass():
         for week in range(int(current_week.days // 7), weeks_remaining + 1):
             if current_week <= 2:
                 increment = 900  # Week 1 to week 2 the increment was 900
-            else:
+            elif current_week <= 3:
                 increment = 1500  # Week 2 to week 3 the increment was 1500
+            else:
+                increment = 1300  # Week 3 to week 4 the increment was 1300
             total += (5400 + (week * increment)) * 3
         return total
 
