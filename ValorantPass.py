@@ -6,7 +6,7 @@ def how_much_to_finish_pass():
     # Take the current level pass of the user.
     while True:
         try:
-            level_in_pass = int(input("What's you level in the pass? "))
+            level_in_pass = int(input("What's your level in the pass? "))
             break
         except ValueError:
             print("This is not a number. Try again.\n")

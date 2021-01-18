@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('/views/ValorantFont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
+
+
+* {
+    font-family: 'ValorantFont';
+    color:black
+}
